@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de plano de saúde</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="planos-de-saúde.png" alt="Planos de Saúde" class="img-fluid" />
+      </div>
+      <div class="col-md-6">
+        <h1>Calculadora de Planos de Saúde</h1>
+        <form id="health-plan-form" class="mt-4">
+          <div class="form-group">
+            <label for="age">Idade</label>
+            <input type="number" class="form-control" id="age" required />
+          </div>
+          <div class="form-group">
+            <label for="weight">Peso (kg)</label>
+            <input type="number" class="form-control" id="weight" required />
+          </div>
+          <div class="form-group">
+            <label for="height">Altura (cm)</label>
+            <input type="number" class="form-control" id="height" required />
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="calculatePlans()">
+            Calcular
+          </button>
+        </form>
+        <div id="result" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+  <script src="trabalho.js"></script>
+</body>
+
+</html>
